@@ -18,7 +18,7 @@ Derived using `y = mx + c`
 
 4. if m == 1 or (dx == dy):
 	Y(k+1) = (Yk) + 1
-	X(k+1) = X(k) + 1
+	X(k+1) = (Xk) + 1
 
 
 
@@ -46,4 +46,9 @@ Derived using `y = mx + c`
 
 
 You can find the Code [here](../code/DDA.cpp)
+
+
+### Disadvantages of DDA
+
+1. We have to use round function for each point. Therefore the number of computations are increased 
 

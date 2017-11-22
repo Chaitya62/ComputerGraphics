@@ -29,7 +29,7 @@ int LineDDA(point p1, point p2, int color){
 	for(long i = 0; i<steps; i++){
 		x += xi;
 		y += yi;
-		putpixel(x, y, color);
+		putpixel(round(x), round(y), color);
 	}
 	return 0;
 }
