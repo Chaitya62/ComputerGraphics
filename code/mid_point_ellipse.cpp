@@ -9,6 +9,9 @@ using namespace std;
 
 
 void putpixelo(int x, int y, int color){
+
+	setlinestyle(SOLID_LINE, 1, 3);
+	line(X(-100), Y(100), X(100), Y(100));
 	putpixel(X(x), Y(y),color);
 	return;
 }
@@ -17,7 +20,7 @@ void putpixelo(int x, int y, int color){
 int drawEllipse(int rx, int ry){
 
 	int x = 0, y = ry;
-	double p1 = ry*ry - rx*rx*ry + rx*rx;
+	double p1 = ry*ry - rx*rx*ry + rx*rx/4;
 
 	putpixelo(x, y, RED);
 	while(2*rx*rx*y >= 2*ry*ry*x){
@@ -89,7 +92,12 @@ int main(){
 	line(X(-(WIDTH/2)), Y(0), X(WIDTH/2), Y(0));
 	line(X(0), Y(HEIGHT/2), X(0), Y(-HEIGHT/2));
 	drawEllipse(200, 100);
-
+	drawEllipse(201, 101);
+	drawEllipse(199, 99);
+	drawEllipse(202, 102);
+	drawEllipse(203, 103);
+	drawEllipse(204, 104);
+	drawEllipse(205, 105);
 	getchar();
 
 	closegraph();

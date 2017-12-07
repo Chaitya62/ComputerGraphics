@@ -160,6 +160,8 @@ int main(){
 	minH = 100;
 	maxH = 200;
 
+	//cin>>minW>>maxW>>minH>>maxH;
+
 	//clipLine(x1, y1, x2, y2);
 
 
